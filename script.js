@@ -36,9 +36,15 @@ let affichage = () =>{
         let buttonDiv = document.createElement("div");
         buttonDiv.innerHTML= buttonCalcValue[i];
         buttonDiv.classList.add("button");
+        if(buttonCalcValue[i] != "="){
+            buttonDiv.setAttribute('id', buttonCalcValue[i])
+        }else{
+            buttonDiv.setAttribute('id', "equals")
+        }
         main.appendChild(buttonDiv);
         
     }
+    
 }
 
 
