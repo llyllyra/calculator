@@ -33,7 +33,7 @@ let affichage = () =>{
     main.appendChild(black)
     for(i = 0; i < number; i++){
         console.log(buttonCalcValue[i]);
-        let buttonDiv = document.createElement("div");
+        let buttonDiv = document.createElement("button");
         buttonDiv.innerHTML= buttonCalcValue[i];
         buttonDiv.classList.add("button");
         if(buttonCalcValue[i] != "="){
